@@ -12,5 +12,7 @@ A simple website project.
 - style.css
 - main.js
 
+## By DOT-KING
+
 ## Author
 wesam 
