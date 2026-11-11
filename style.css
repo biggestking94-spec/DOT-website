@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: 0;
+}
+
+body {
+    background-color: var(--back-color);
+    overflow-x: hidden;
+}
+
+:root {
+    --main-color: #993333;
+    --icon-color: #993333;
+    --text-color: #fff;
+    --back-color: #000;
+    --dev-color: #ddd;
+}
+
+.darkmod {
+    --main-color: #993333;
+    --icon-color: #993333;
+    --back-color: #fff;
+    --text-color: #000;
+    --dev-color: #222;
+}
+
+/* start header*/
+header {
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.name h2 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+.header .menu {
+    color: var(--back-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 200px;
+    background-color: var(--text-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.nav ul li {
+    list-style-type: none;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav ul li a {
+    color: var(--back-color);
+    text-decoration: none;
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.btn {
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--back-color);
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.svgbt {
+    display: none;
+}
+/* end header*/
+
+/* General Section Spacing */
+section, .main, .about, .ourWorks, .contact {
+    padding: 80px 5% 40px 5%;
+}
+
+/* start home*/
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.tex {
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+}
+
+.web {
+    color: var(--main-color);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.web span {
+    color: var(--text-color);
+}
+
+.tex button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    color: var(--back-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.heroImg {
+    width: 100%;
+    max-width: 400px;
+}
+
+.heroImg svg {
+    width: 100%;
+    height: auto;
+}
+/* end home*/
+
+/* start about*/
+.about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.text {
+    width: 100%;
+}
+
+.text h1 {
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.text h6 {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.aboutImg {
+    width: 100%;
+    max-width: 400px;
+}
+
+.aboutImg svg {
+    width: 100%;
+    height: auto;
+}
+/* end about*/
+
+/* start our works*/
+.ourWorks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ourWorks .mainapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.ourWorks .myapp {
+    width: 100%;
+    max-width: 400px;
+}
+
+.myapp svg {
+    width: 100%;
+    height: auto;
+}
+
+.ourWorks .otext {
+    width: 100%;
+}
+
+.otext h1 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.otext p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.ourWorks .project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.devutils, .fordev {
+    width: 100%;
+    padding: 25px;
+    background-color: var(--dev-color);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.devutils h2, .fordev h2 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.devutils span, .fordev span {
+    color: var(--back-color);
+}
+/* end our works*/
+
+/* start contact*/
+.contact {
+    text-align: center;
+}
+
+.contact .dtext h1 {
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.svgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.svgs a {
+    color: var(--text-color);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.svgs svg {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact p {
+    color: var(--text-color);
+}
+/* end contact*/
+
+/* start footer*/
+footer {
+    background-color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
+/* end footer*/
+
+/* start Media Queries for Larger Screens */
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .tex {
+        width: 50%;
+        text-align: left;
+    }
+
+    .heroImg {
+        width: 45%;
+        max-width: none;
+    }
+
+    .web {
+        font-size: 3rem;
+    }
+
+    .about {
+        flex-direction: row;
+        justify-key: space-between;
+        text-align: left;
+    }
+
+    .text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .aboutImg {
+        width: 45%;
+        max-width: none;
+    }
+
+    .ourWorks .mainapp {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .ourWorks .myapp, .ourWorks .otext {
+        width: 50%;
+    }
+
+    .ourWorks .project {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .devutils, .fordev {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .web {
+        font-size: 4rem;
+    }
+}
